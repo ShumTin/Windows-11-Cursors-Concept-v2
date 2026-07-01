@@ -1,0 +1,79 @@
+[Version]
+signature="$Windows NT$"
+provider=%INF_Provider%
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg,Wreg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%arrow%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%appstarting%,%10%\%CUR_DIR%\%wait%,%10%\%CUR_DIR%\%crosshair%,%10%\%CUR_DIR%\%ibeam%,%10%\%CUR_DIR%\%nwpen%,%10%\%CUR_DIR%\%no%,%10%\%CUR_DIR%\%sizens%,%10%\%CUR_DIR%\%sizewe%,%10%\%CUR_DIR%\%sizenwse%,%10%\%CUR_DIR%\%sizenesw%,%10%\%CUR_DIR%\%sizeall%,%10%\%CUR_DIR%\%uparrow%,%10%\%CUR_DIR%\%hand%,%10%\%CUR_DIR%\%person%,%10%\%CUR_DIR%\%pin%"
+
+
+[Wreg]
+HKCU,"Control Panel\Cursors",,0x00020000,"%SCHEME_NAME%"
+HKCU,"Control Panel\Cursors",AppStarting,0x00020000,"%10%\%CUR_DIR%\%appstarting%"
+HKCU,"Control Panel\Cursors",Arrow,0x00020000,"%10%\%CUR_DIR%\%arrow%"
+HKCU,"Control Panel\Cursors",Crosshair,0x00020000,"%10%\%CUR_DIR%\%crosshair%"
+HKCU,"Control Panel\Cursors",Hand,0x00020000,"%10%\%CUR_DIR%\%hand%"
+HKCU,"Control Panel\Cursors",Help,0x00020000,"%10%\%CUR_DIR%\%help%"
+HKCU,"Control Panel\Cursors",IBeam,0x00020000,"%10%\%CUR_DIR%\%ibeam%"
+HKCU,"Control Panel\Cursors",No,0x00020000,"%10%\%CUR_DIR%\%no%"
+HKCU,"Control Panel\Cursors",NWPen,0x00020000,"%10%\%CUR_DIR%\%nwpen%"
+HKCU,"Control Panel\Cursors",SizeAll,0x00020000,"%10%\%CUR_DIR%\%sizeall%"
+HKCU,"Control Panel\Cursors",SizeNESW,0x00020000,"%10%\%CUR_DIR%\%sizenesw%"
+HKCU,"Control Panel\Cursors",SizeNS,0x00020000,"%10%\%CUR_DIR%\%sizens%"
+HKCU,"Control Panel\Cursors",SizeNWSE,0x00020000,"%10%\%CUR_DIR%\%sizenwse%"
+HKCU,"Control Panel\Cursors",SizeWE,0x00020000,"%10%\%CUR_DIR%\%sizewe%"
+HKCU,"Control Panel\Cursors",UpArrow,0x00020000,"%10%\%CUR_DIR%\%uparrow%"
+HKCU,"Control Panel\Cursors",Wait,0x00020000,"%10%\%CUR_DIR%\%wait%"
+HKCU,"Control Panel\Cursors",Person,0x00020000,"%10%\%CUR_DIR%\%person%"
+HKCU,"Control Panel\Cursors",Pin,0x00020000,"%10%\%CUR_DIR%\%pin%"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce\Setup\","",,"rundll32.exe shell32.dll,Control_RunDLL main.cpl @0,1"
+
+[Scheme.Cur]
+"arrow.cur"
+"help.cur"
+"appstarting.ani"
+"wait.ani"
+"crosshair.cur"
+"nwpen.cur"
+"no.cur"
+"sizens.cur"
+"sizewe.cur"
+"sizenwse.cur"
+"sizenesw.cur"
+"sizeall.cur"
+"uparrow.cur"
+"hand.cur"
+"ibeam.cur"
+"person.cur"
+"pin.cur"
+
+
+[Strings]
+INF_Provider    = "JepriCreations"
+CUR_DIR         = "Cursors\W11 Cursor Light Free"
+SCHEME_NAME     = "W11 Cursor Light Free by Jepri Creations"
+arrow		    = "arrow.cur"
+help		    = "help.cur"
+appstarting		= "appstarting.ani"
+wait		    = "wait.ani"
+crosshair	    = "crosshair.cur"
+nwpen		    = "nwpen.cur"
+ibeam		    = "ibeam.cur"
+no	            = "no.cur"
+sizens		    = "sizens.cur"   
+sizewe		    = "sizewe.cur"
+sizenwse		= "sizenwse.cur"
+sizenesw		= "sizenesw.cur"
+sizeall		    = "sizeall.cur"
+uparrow	        = "uparrow.cur"
+hand		    = "hand.cur"
+person          = "person.cur"
+pin             = "pin.cur"
+
+
